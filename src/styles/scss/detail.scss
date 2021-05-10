@@ -1,0 +1,213 @@
+// 商品详情图片
+.zoom {
+    float: left;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #d39ed3;
+    position: relative;
+    .zoom-mask {
+        display: none;
+        background: 50% top no-repeat #e2bea5;
+        opacity: 0.5;
+        position: absolute;
+        cursor: move;
+    }
+    .zoom-max {
+        display: none;
+        width: 600px;
+        height: 600px;
+        box-sizing: border-box;
+        border: 1px solid #ff6700;
+        position: absolute;
+        top: 0;
+        left: 500px;
+        background-color: #fff;
+    }
+    .zoom-min {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        // background-image: url("../assets/images/detail-01.png");
+        background-size: 100% 100%;
+    }
+}
+.detail {
+    float: right;
+    width: 700px;
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #212121;
+    }
+    .detail_detail {
+        color: #b0b0b0;
+        padding-top: 8px;
+        line-height: 1.5;
+        &+p {
+            color: #ff6700;
+        }
+    }
+    .detail_price {
+        display: block;
+        font-size: 18px;
+        line-height: 1;
+        color: #ff6700;
+        padding: 12px 0 10px;
+        border-bottom: 1px solid #e0e0e0;
+        del {
+            color: #b0b0b0;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    }
+    // 秒杀商品特有
+    .detail_seckill {
+        height: 52px;
+        background: url("../assets/images/booking.png") 50% 0 no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        z-index: -1;
+        span {
+            height: 26px;
+            line-height: 26px;
+            padding-left: 20px;
+            display: block;
+            b {
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+        div {
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            em {
+                font-style: normal;
+                margin-left: 18px;
+            }
+        }
+    }
+    .detail_address {
+        margin-top: 20px;
+        padding: 30px 50px;
+        background: #fafafa;
+        border: 1px solid #e0e0e0;
+    }
+    .select_color {
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 3;
+        }
+        li {
+            width: 290px;
+            height: 42px;
+            border: 1px solid #ff6700;
+            font-size: 16px;
+            float: left;
+            margin-right: 12px;
+            text-align: center;
+            line-height: 42px;
+            color: #ff6700;
+        }
+        div {
+            margin-top: 10px;
+            background: #f9f9fa;
+            padding: 30px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            span {
+                display: block;
+                color: #ff6700;
+                font-size: 24px;
+                padding-top: 20px;
+            }
+        }
+    }
+    .shop_buy {
+        margin-bottom: 10px;
+        .shop_car {
+            width: 298px;
+            height: 52px;
+            line-height: 52px;
+            font-size: 16px;
+            background: #ff6700;
+            color: #fff;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .shop_like {
+            width: 140px;
+            height: 52px;
+            line-height: 52px;
+            font-size: 16px;
+            border: none;
+            background-color: #b0b0b0;
+            color: #fff;
+            margin-left: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .shop_tab {
+        color: #b0b0b0;
+        em {
+            margin-left: 6px;
+        }
+    }
+}
+
+// 选项卡
+.selcar {
+    background-color: #FFF;
+    .selcar_nav {
+        user-select: none;
+        margin-top: 30px;
+        background-color: #e0e0e0;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        div {
+            width: 100px;
+            display: inline-block;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .selcar_active {
+            background: #35302d;
+            color: #fff;
+        }
+    }
+    .selcar_main {
+        text-align: center;
+        border-bottom: 3px solid #b0b0b0;
+        .selcar_img {
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        .selcar_txt, .selcar_command {
+            display: none;
+            h3 {
+                line-height: 80px;
+            }
+            p {
+                color: #858585;
+                line-height: 60px;
+            }
+            span {
+                color: #413e3e;
+                font-size: 30px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

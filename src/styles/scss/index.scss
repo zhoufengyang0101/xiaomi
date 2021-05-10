@@ -1,0 +1,385 @@
+/* 共有 */
+.center_img img {
+	margin: 22px 0;
+}
+/* 商品共同样式 */
+.model_title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 58px;
+}
+.goods_list {
+	/* float: left; */
+	// overflow: hidden;
+    // background-color: #f5f5f5;
+    li {
+        height: 300px;
+        width: 234px;
+        background-color: #fff;
+        float: left;
+        margin-left: 14px;
+        // overflow: hidden;
+        text-align: center;
+        position: relative;
+        &:hover {
+            box-shadow: 0 15px 30px rgb(209, 205, 205);
+            top: -3px;
+        }
+        h3 {
+            font-size: 12px;
+            color: #000;
+            font-weight: 500;
+            line-height: 23px;
+        }
+        p {
+            font-size: 12px;
+            color: #adadb7;
+            line-height: 23px;
+        }
+        .price {
+            font-size: 12px;
+            color: #fa6509;
+            line-height: 32px;
+            span {
+                font-size: 12px;
+                color: #adadb7;
+                line-height: 32px;
+                text-decoration: line-through;
+            }
+        }
+        img {
+            width: 200px;
+        }
+    }
+}
+
+/* banner */
+.banner {
+	height: 460px;
+	position: relative;
+    overflow: hidden;
+    .imgCon {
+        height: 100%;
+        position: absolute;
+        img {
+            height: 100%;
+        }
+    }
+    .aside_nav {
+        position: absolute;
+        /* float: left; */
+        width: 234px;
+        height: 420px;
+        top: 0;
+        left: 0;
+        padding: 20px 0;
+        background-color: rgba(105,101,101,.6);
+        li {
+            height: 42px;
+            width: 234px;
+            line-height: 42px;
+            box-sizing: border-box;
+            /* background-color: #00FFFF; */
+            /* 鼠标悬停 */
+            a {
+                display: block;
+                box-sizing: border-box;
+                padding: 0 20px 0 30px;
+                &:hover {
+                    background-color: #ff6700;
+                }
+                &::after {
+                    content: ">";
+                    position: absolute;
+                    right: 20px;
+                }
+            }
+        }
+        a{
+            color: #fff;
+        }
+    }
+    .ulDot {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        li {
+            float: left;
+            margin: 5px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #ddd;
+            border: 2px solid #fff;
+        }
+    }
+    span {
+        position: absolute;
+        background-color: #e8e8ee;
+        text-align: center;
+        line-height: 70px;
+        width: 40px;
+        height: 70px;
+        z-index: 9;
+        font-size: 40px;
+        top: 195px;
+        opacity: 0.3;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .lunbo-left {
+        left: 234px;
+    }
+    .lunbo-right {
+        right: 0px;
+    }
+}
+
+
+/* banner 底部 */
+.banner_bottom {
+	height: 172px;
+	padding: 14px 0 26px 0;
+    div {
+        float: left;
+    }
+    .banner_bottom_nav {
+        width: 234px;
+        height: 172px;
+        background-color: #5f5750;
+        ul {
+            padding-left: 4px;
+            padding-top: 4px;
+            li {
+                float: left;
+                width: 75px;
+                height: 82px;
+                /* background-color: pink; */
+                text-align: center;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 1px;
+                    height: 70px;
+                    background-color: #665e57;
+                    position: absolute;
+                    left: 0px;
+                    top: 6px;
+                }
+                &::after {
+                    content: '';
+                    width: 64px;
+                    height: 1px;
+                    background-color: #665e57;
+                    position: absolute;
+                    left: 6px;
+                    top: 0px;
+                }
+                p {
+                    font-size: 12px;
+                    padding-top: 8px;
+                    color: #FFF;
+                }
+                img {
+                    height: 24px;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+    .banner_bottom_img {
+        width: 316px;
+        margin-left: 14px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* 没有商品 */
+#no-shop {
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    color: #858588;
+}
+/* 主要商品区域分类 */
+.main {
+    padding: 50px 0;
+	background-color: #f5f5f5;
+}
+/* 小米闪购模块 */
+.purchase {
+    overflow: hidden;
+	padding-top: 5px;
+	position: relative;
+	/* padding-bottom: 18px; */
+    .purchase_main, .purchase ul {
+        float: left;
+    }
+    .purchase_main {
+        z-index: 9;
+        position: relative;
+        height: 339px;
+        width: 234px;
+        border-top: 1px solid #e53934;
+        text-align: center;
+        overflow: hidden;
+        background-color: #f1eded;
+        p {
+            font-size: 18px;
+            margin-top: 26px;
+            /* 32+32+18 */
+            line-height: 82px;
+            color: #e53934;
+        }
+        #date {
+            /* 32+32+18 */
+            line-height: 82px;
+            margin: 0;
+            font-size: 14px;
+            color: #6f6d6d;
+        }
+        .time {
+            width: 168px;
+            margin: 0 auto;
+            /* background-color: #008DD5; */
+        }
+        span {
+            float: left;
+            /* display: block; */
+            width: 46px;
+            height: 46px;
+            background-color: #605751;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+            color: #fff;
+        }
+        .maohao {
+            margin-right: 15px;
+            &::after {
+                content: ':';
+                position: absolute;
+                left: 52px;
+                color: #605751;
+            }
+        }
+    }
+    /*设置后边ul样式  */
+    /* 使用通用商品样式 */
+    ul {
+        position: absolute;
+        left: 239px;
+        z-index: 1;
+        li {
+            height: 339px;
+            &:nth-child(1n) {
+                border-top: 1px solid #00c0a5;
+            }
+            &:nth-child(2n) {
+                border-top: 1px solid #83c44e;
+            }
+            &:nth-child(3n) {
+                border-top: 1px solid #2196f3;
+            }
+            &:nth-child(4n) {
+                border-top: 1px solid #2196f3;
+            }
+            img {
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+/* 前进后退切换按钮 */
+/* 给purchase相对定位 */
+.pre_next {
+	/* float: left; */
+	position: absolute;
+	right: 0px;
+	top: 22px;
+    span {
+        float: left;
+        width: 34px;
+        height: 22px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #b0b4bf;
+        border: 1px solid #e0e0e0;
+        &:nth-child(1) {
+            border-right: none;
+        }
+    }
+}
+
+
+/* 手机模块 */
+.phone_left {
+	width: 234px;
+	height: 614px;
+	float: left;
+    img {
+        width: 100%;
+    }	
+}
+/* 手机商品使用通用样式，再给中间14px空白 */
+.phone ul {
+	float: left;
+	/* width: 1226-234; */
+	width: 992px;
+	margin-top: -14px;
+    li {
+        margin-top: 14px;
+        img {
+            width: 200px;
+        }
+    }
+}
+/* 家电 */
+.family .phone_left img:nth-child(2) {
+	margin-top: 14px;
+	/* height: 300px; */
+}
+.family ul {
+	float: left;
+	/* width: 1226-234; */
+	width: 992px;
+	margin-top: -14px;
+    li {
+        margin-top: 14px;
+    }
+}
+/* 视频 */
+/* .mp4 {
+	overflow: hidden;
+} */
+.mp4 img {
+	width: 100%;
+}
+.mp4 ul li {
+	width: 296px;
+	height: 285px;
+	/* background-color: pink; */
+	float: left;
+	margin-left: 14px;
+	margin-bottom: 26px;
+    &:first-child {
+        margin-left: 0;
+    }
+    div {
+        /* 285-178 */
+        height: 107px;
+        background-color: #fff;
+        overflow: hidden;
+        text-align: center;
+        p {
+            color: #333;
+            margin-top: 32px;
+        }
+    }
+}

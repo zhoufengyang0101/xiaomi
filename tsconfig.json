@@ -1,0 +1,9 @@
+{
+  "include": ["./src/scripts/ts"],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "strict": true,
+    "noEmitOnError": true
+  }
+}

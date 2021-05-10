@@ -1,0 +1,250 @@
+.car_title {
+    font-size: 28px;
+    line-height: 100px;
+    color: #424242;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 10px;
+    &+span {
+        color: #757575;
+        font-size: 14px;
+    }
+}
+.car {
+    background-color: #f5f5f5;
+    .car_line {
+        height: 0;
+        width: 100%;
+        border-bottom: 2px solid #ff6500;
+    }
+    .shop_car {
+        overflow: auto;
+        .empty_car{
+            overflow: auto;
+            height: 273px;
+            padding-left: 558px;
+            margin: 65px 0 130px;
+            background: url("../assets/images/cart-empty.png") no-repeat 127px 0;
+            h2 {
+                font-size: 32px;
+                color: #b0b0b0;
+                margin-top: 70px;
+            }
+            a {
+                display: block;
+                text-align: center;
+                width: 170px;
+                height: 48px;
+                line-height: 48px;
+                background: #ff6700;
+                border-color: #ff6700;
+                color: #fff;
+                margin-top: 15px;
+            }
+        }
+        .car_box {
+            background-color: #fff;
+            margin: 38px auto;
+            color: #333;
+            .car_head {
+                height: 70px;
+                line-height: 70px;
+                color: #424242;
+                div {
+                    float: left;
+                    .car_total {
+                        color: #424242 !important;
+                    }
+                }
+            }
+            .car_body {
+                >div {
+                    height: 85px;
+                    border-top: 1px solid #e0e0e0;
+                    padding: 15px 0;
+                    div {
+                        float: left;
+                        height: 85px;
+                        line-height: 85px;
+                    }
+                    .car_total {
+                        color: #ff6700;
+                    }
+                }
+            }
+            .car_check {
+                width: 110px;
+                i {
+                    margin-right: 15px;
+                }
+            }
+            .car_img {
+                width: 120px;
+                height: 70px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .car_name {
+                width: 380px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .car_price {
+                width: 160px;
+            }
+            .car_num {
+                width: 160px;
+                text-align: center;
+                .change-num {
+                    height: 38px;
+                    border: 1px solid #e0e0e0;
+                    overflow: hidden;
+                    margin-top: 22px;
+                }
+                i, input {
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    height: 40px;
+                    line-height: 38px;
+                }
+                i {
+                    border: none;
+                    width: 40px;
+                    color: #757575;
+                    &:hover {
+                        background-color: #e0e0e0;
+                    }
+                }
+                input {
+                    width: 72px;
+                    outline: none;
+                    border-width: 0;
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+            .car_total {
+                width: 200px;
+                text-align: center;
+            }
+            .car_action {
+                width: 80px;
+                text-align: center;
+                i {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    border: none;
+                    background-color: #fff;
+                    color: #858585;
+                    margin: 0;
+                    &:hover {
+                        background-color: #ff6500;
+                        color: #fff;
+                        border-radius: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+            i {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                border: 1px solid #e0e0e0;
+                margin-left: 24px;
+                background-color: #fff;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                vertical-align: middle;
+                position: relative;
+                top: -1px;
+                cursor: pointer;
+                &:hover {
+                    color: #757575;
+                }
+            }
+            .checked {
+                background-color: #ff6700;
+                color: #fff;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .car_foot {
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            color: #757575;
+            margin-top: 30px;
+            background-color: #fff;
+            .over_left {
+                float: left;
+                a {
+                    margin-left: 35px;
+                    padding-right: 16px;
+                    border-right: 1px solid #eee;
+                    color: #747474;
+                }
+                span {
+                    padding-left: 16px;
+                    b {
+                        font-weight: normal;
+                        color: #ff6700;
+                        padding: 0 3px;
+                    }
+                }
+            }
+            .over_right {
+                float: right;
+                b {
+                    font-weight: normal;
+                    color: #ff6700;
+                    margin-right: 50px;
+                    i {
+                        font-style: normal;
+                        font-size: 30px;
+                    }
+                }
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #ff6700;
+                    width: 200px;
+                    font-size: 18px;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+        }
+    }
+    .title_info {
+        height: 40px;
+        margin-top: 40px;
+        border-top: 1px solid #e0e0e0;
+        position: relative;
+        .shop_ather, .shop_commend {
+            display: none;
+            width: 400px;
+            position: absolute;
+            top:-20px;
+            left: calc(50% - 200px);
+            height: 40px;
+            line-height: 40px;
+            background-color: #f5f5f5;
+            padding: 0 30px;
+            font-size: 30px;
+            color: #757575;
+            text-align: center;
+        }
+    }
+}

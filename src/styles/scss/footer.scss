@@ -1,0 +1,244 @@
+/* footer */
+.footer {
+	height: 522px;
+	background-color: #fff;
+    .footer_top {
+        height: 79px;
+        ul {
+            height: 79px;
+            li {
+                float: left;
+                width: 20%;
+                line-height: 79px;
+                text-align: center;
+                box-sizing: border-box;
+                position: relative;
+                font-size: 16px;
+                span {
+                    font-size: 24px;
+                    margin-right: 8px;
+                    line-height: 79px;
+                }
+            }
+            .top_border::after {
+                content: '';
+                height: 25px;
+                width: 1px;
+                position: absolute;
+                background-color: #e0e0e0;
+                top: 27px;
+                right: 0;
+            }
+        }
+    }
+    .footer_main {
+        ul {
+            float: left;
+            height: 192px;
+            width: 160px;
+            /* background-color: #00FFFF; */
+            li {
+                line-height: 28px;
+                color: #757575;
+                font-size: 12px;
+                &:first-child {
+                    line-height: 86px;
+                    font-size: 14px;
+                    color: #333;
+                }
+                a {
+                    color: #757575;
+                    &:hover {
+                        color: #ff6700;
+                    }
+                }
+            }
+        }
+        .people_serve {
+            width: 226px;
+        }
+    }
+}
+
+/* 客服电话模块 */
+.serve_phone {
+	height: 112px;
+	width: 226px;
+	border-left: 1px solid #333;
+	/* background-color: #00A0FF; */
+	margin-top: 40px;
+	text-align: center;
+    h5 {
+        color: #ff6700;
+        font-size: 16px;
+        line-height: 27px;
+    }
+    p {
+        color: #616161;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    span {
+        display: block;
+        color: #ff6700;
+        font-size: 12px;
+        line-height: 20px;
+        width: 119px;
+        height: 28px;
+        line-height: 28px;
+        margin: 0 auto;
+        margin-top: 15px;
+        border: 1px solid #ff6700;
+    }
+}
+.footer_bottom {
+	height: 200px;
+	/* background-color: red; */
+	/* background-color: #fafafa; */
+	padding: 30px 0;
+    .logo, .footer_text {
+        float: left;
+        padding-left: 10px;
+        width: 60px;
+        height: 60px;
+        img {
+            height: 100%;
+        }
+    }
+    .footer_text {
+        width: 1140px;
+        ul li {
+            float: left;
+            padding: 0 3px;
+            border-left: 1px solid #b0c3d7;
+            border-right: 1px solid #fad7c3;
+            &:first-child {
+                border-left: none;
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+        p {
+            color: #b0b0b0;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        h2 {
+            color: #bababa;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+            /* margin: 0 auto; */
+            top: 60px;
+        }
+        ol li {
+            float: left;
+            margin-right: 12px;
+            margin-top: 8px;
+            height: 28px;
+        }
+    }
+}
+
+/* 固定侧边栏 */
+.fixed_nav {
+	width: 30px;
+	height: 200px;
+	position: fixed;
+	bottom: 120px;
+	right: 0;
+	background-color: #fff;
+	border-bottom: 1px solid #f5f5f5;
+	border-left: 1px solid #f5f5f5;
+	z-index: 99;
+    li {
+        width: 30px;
+        height: 40px;
+        background-position: center center; 
+        background-repeat: no-repeat;
+        border-top: 1px solid #f5f5f5;
+        border-right: 1px solid #f5f5f5;
+        position: relative;
+        background-size: 20px;
+        &:nth-child(1) {
+            background-image: url(../assets/images/fixed_nav32.png);
+        }
+        &:nth-child(1):hover {
+            background-image: url(../assets/images/fixed_nav31.png);
+        }
+        &:nth-child(2) {
+            background-image: url(../assets/images/fixed_nav12.png);
+        }
+        &:nth-child(2):hover {
+            background-image: url(../assets/images/fixed_nav11.png);
+        }
+        &:nth-child(3) {
+            background-image: url(../assets/images/fixed_nav42.png);
+        }
+        &:nth-child(3):hover {
+            background-image: url(../assets/images/fixed_nav41.png);
+        }
+        &:nth-child(4) {
+            background-image: url(../assets/images/fixed_nav02.png);
+        }
+        &:nth-child(4):hover {
+            background-image: url(../assets/images/fixed_nav01.png);
+        }
+        &:nth-child(5) {
+            background-image: url(../assets/images/fixed_nav52.png);
+        }
+        &:nth-child(5):hover {
+            background-image: url(../assets/images/fixed_nav51.png);
+        }
+        div {
+            display: none;
+            font-size: 12px;
+            padding: 4px;
+            color: #333;
+            position: relative;
+            right: 70px;
+            top: 20px;
+            background-color: #fff;
+            text-align: center;
+            border: 1px solid #dadada;
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border: 8px solid transparent;
+                border-left: 8px solid #fff;
+                position: absolute;
+                right: -16px;
+                /* top: 25px; */
+                display: none;
+                z-index: 1;
+            }
+        }
+        &:nth-child(1) div {
+            width: 200px;
+            right: 220px;
+        }
+        &:hover {
+            div, div::before {
+                display: block;
+            }
+        }
+    }
+    /* 去顶部 */
+    .go_top a {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        width: 30px;
+        height: 40px;
+        border: 1px solid #dadada;
+        background: #fff url(../assets/images/totop.png) no-repeat center center;
+        background-size: 20px;
+        &:hover {
+            background-image: url(../assets/images/totop_hover.png);
+        }
+    }
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米账号登录</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login_left">
+        </div>
+        <div class="login_right">
+            <div class="login_header">
+                <img src="./assets/images/logo-mi2.png" alt="">
+                <span>小米账号</span>
+                <ul>
+                    <li>用户协议</li>
+                    <li>隐私政策</li>
+                    <li>帮助中心</li>
+                    <li>中文(简体)</li>
+                </ul>
+            </div>
+            <form action="javascript:void(0)" id="login_form">
+                <div class="form_header">
+                    <h4 id="login_h">登录</h4>
+                    <h4 id="reg_h">注册</h4>
+                </div>
+                <div class="change_wall">
+                    <div class="change_wall_two">
+                        <div class="login_wall">
+                            <p>
+                                <input type="username" id="username" placeholder="邮箱/手机号码/小米ID">
+                                <span id="usermsg">请输入账号</span>
+                            </p>
+                            <p>
+                                <input type="password" id="password" placeholder="密码">
+                                <span id="passmsg">请输入密码</span>
+                            </p>
+                            <div>
+                                <button id="login">登录</button>
+                            </div>
+                            <i class="login_wall_check"><span class="iconfont icon-check4" id="checked"></span>七天免登录</i>
+                            <a>忘记密码？</a>
+                        </div>
+                        <div class="reg_wall">
+                            <p>
+                                <input type="username" id="name" placeholder="邮箱/手机号码/小米ID">
+                                <span>请输入账号</span>
+                            </p>
+                            <p>
+                                <input type="password" id="pass" placeholder="密码">
+                                <span>请输入密码</span>
+                            </p>
+                            <div>
+                                <button id="register">立即注册</button>
+                            </div>
+                            <p class="mi_read">已阅读并同意小米帐号 用户协议 和 隐私政策</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p class="miicp">小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/Utils.js"></script>
+    <script src="./assets/utils/layer.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+{
+  "id": "2525418",
+  "name": "shopping",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7239675",
+      "name": "check",
+      "font_class": "check",
+      "unicode": "e723",
+      "unicode_decimal": 59171
+    },
+    {
+      "icon_id": "9567562",
+      "name": "check",
+      "font_class": "check1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11538032",
+      "name": "check",
+      "font_class": "check2",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "11760917",
+      "name": "check",
+      "font_class": "check3",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "12898924",
+      "name": "check",
+      "font_class": "check4",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "15066905",
+      "name": "check",
+      "font_class": "check5",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "736606",
+      "name": "check-box",
+      "font_class": "checkbox",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "7826095",
+      "name": "check_box",
+      "font_class": "baseline-check_box-px",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "839008",
+      "name": "减",
+      "font_class": "jian",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "1172346",
+      "name": "icon_checkbox_sel",
+      "font_class": "iconcheckboxsel",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4266163",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "4586557",
+      "name": "plus",
+      "font_class": "plus",
+      "unicode": "e95e",
+      "unicode_decimal": 59742
+    },
+    {
+      "icon_id": "8316569",
+      "name": "icon-checkbox",
+      "font_class": "icon-checkbox",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11349212",
+      "name": "plus",
+      "font_class": "plus1",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "14095236",
+      "name": "减",
+      "font_class": "jian1",
+      "unicode": "e774",
+      "unicode_decimal": 59252
+    },
+    {
+      "icon_id": "17826045",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "17984171",
+      "name": "关  闭",
+      "font_class": "guanbi1",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "2116278",
+      "name": "礼物",
+      "font_class": "gift_icon",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "7556894",
+      "name": "正确",
+      "font_class": "zhengque",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "12025956",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e7a3",
+      "unicode_decimal": 59299
+    },
+    {
+      "icon_id": "12660037",
+      "name": "正确",
+      "font_class": "zhengque1",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "17711563",
+      "name": "工具",
+      "font_class": "gongju",
+      "unicode": "e81d",
+      "unicode_decimal": 59421
+    },
+    {
+      "icon_id": "592804",
+      "name": "7",
+      "font_class": "7",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "16606310",
+      "name": "15",
+      "font_class": "15",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "17629115",
+      "name": "右",
+      "font_class": "tubiaozhizuomoban-06",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "18057973",
+      "name": "右",
+      "font_class": "right",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "13409803",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "15546352",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "2076190",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e86e",
+      "unicode_decimal": 59502
+    }
+  ]
+}

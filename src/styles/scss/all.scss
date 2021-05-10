@@ -1,0 +1,28 @@
+html, body, ul, li, p, h1, h2, h3, h4, h5, h6, ol, dl {
+	margin: 0;
+	padding: 0;
+}
+.center {
+	width: 1226px;
+	margin: 0 auto;
+	/* background-color: #00FFFF; */
+}
+li {
+	list-style: none;
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+img {
+	vertical-align: top;
+}

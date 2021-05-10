@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
+
+    <style>
+        .layui-layer .layui-layer-btn {
+            text-align: center;
+            height: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .layui-layer .layui-layer-setwin .layui-layer-close2 {
+            right: 0;
+            top: 0;
+            line-height: 30px;
+            text-align: center;
+            color: #757575;
+            cursor: pointer;
+        }
+
+        .layui-layer .layui-layer-btn .layui-layer-btn0 {
+            background: #ff6700;
+            border-color: #ff6700;
+            color: #fff;
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .layui-layer .layui-layer-btn .layui-layer-btn1 {
+            background: #b0b0b0;
+            border-color: #b0b0b0;
+            color: #fff;
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 版心1226px -->
+    <!-- 顶部高38px -->
+    <div class="top" id="top">
+        <div class="center clearfix">
+            <ul class="top_left clearfix">
+                <li><a href="./index.html">小米商城</a></li>
+                <li><a>MIUI</a></li>
+                <li><a>loT</a></li>
+                <li><a>云服务</a></li>
+                <li><a>金融</a></li>
+                <li><a>有品</a></li>
+                <li><a>小爱开放平台</a></li>
+                <li><a>资质证照</a></li>
+                <li><a>协议规则</a></li>
+                <li><a>下载app</a></li>
+                <li><a>selectLocation</a></li>
+
+            </ul>
+            <ul class="top_right clearfix">
+                <li id="user"><a href="login.html">登录</a><a href="login.html">注册</a></li>
+                <li><a href="index.html">小米商城</a></li>
+                <li class="shopping_card"><a href="shopCar.html"><img src="./assets/images/fixed_nav51.png">购物车</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo高100px -->
+    <div class="navbar center clearfix">
+        <img src="./assets/images/logo-mi2.png" alt="">
+        <ul>
+            <li>
+                <a>小米手机</a>
+            </li>
+            <li>
+                <a>Redmi手机</a>
+            </li>
+            <li>
+                <a>电视</a>
+            </li>
+            <li>
+                <a>笔记本</a>
+            </li>
+            <li>
+                <a>家电</a>
+            </li>
+            <li>
+                <a>路由器</a>
+            </li>
+            <li>
+                <a>智能硬件</a>
+            </li>
+            <li>
+                <a>服务</a>
+            </li>
+            <li>
+                <a>社区</a>
+            </li>
+        </ul>
+        <div class="serch clearfix">
+            <input type="text" name="serch" placeholder="小米9Pro 5G" />
+            <a href="javascript:void(0)"><span class="iconfont icon-sousuo"></span></a>
+            <ol class="search-list">
+                <li>小米11</li>
+                <li>小米扫地机器人</li>
+                <li>电饭煲</li>
+                <li>家具</li>
+                <li>智能家居</li>
+                <li>小米电视机</li>
+            </ol>
+        </div>
+    </div>
+    <!--  -->
+    <div class="seckill">
+        <div class="center">
+            <div class="seckill-header"></div>
+            <div class="seckill-nav clearfix">
+                <ul>
+                    <!-- <li><b>10:00</b>即将开始</li>
+                    <li><b>14:00</b>即将开始</li>
+                    <li><b>18:00</b>即将开始</li>
+                    <li><b>20:00</b>即将开始</li>
+                    <li><b>22:00</b>即将开始</li> -->
+                </ul>
+            </div>
+            <div class="seckill-shoplist">
+                <ul class="clearfix">
+                    <!-- <li>
+                        <div><img src="./assets/images/1612c93ad4756215774a0dbec7a81bb2.png"></div>
+                        <div>
+                            <p>砂带回家</p>
+                            <p>的非水电费第三方</p>
+                            <span>123元<del>1231元</del></span>
+                            <a>立即抢购</a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li> -->
+                </ul>
+            </div>
+            <div class="seckill-text">
+                <p>*小米秒杀活动规则：<br>
+                    1.秒杀商品是否参加活动、最终秒杀成功的商品，以订单结算页显示为准，活动包括但不限于优惠券、赠品、满减、满赠等；<br>
+                    2.秒杀商品数量有限，活动以下单支付成功为准，请加入购物车后尽快下单支付;<br>
+                    3.秒杀价不含运费，最终以订单结算页价格为准；<br>
+                    4.订单中商品的数量、颜色、型号等，以订单结算页为准。<br>
+                    5.名称带有 [闪购] 字样的商品，不支持价格保护服务。<br>
+                    温馨提示：因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系小米客服，以便我们及时补正。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="center">
+            <div class="footer_top">
+                <ul class="clearfix">
+                    <li class="top_border"><a><span class="iconfont icon-gongju"></span>预约维修服务</a></li>
+                    <li class="top_border"><a><span class="iconfont icon-7"></span>7天无理由退货</a></li>
+                    <li class="top_border"><a><span class="iconfont icon-15"></span>15天免费换货</a></li>
+                    <li class="top_border"><a><span class="iconfont icon-gift_icon"></span>满69包邮</a></li>
+                    <li><span class="iconfont icon-dingwei"></span><a>520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer_main clearfix">
+                <ul>
+                    <li>帮助中心</li>
+                    <li><a href="">账户管理</a></li>
+                    <li><a href="">购物指南</a></li>
+                    <li><a href="">订单操作</a></li>
+                </ul>
+                <ul>
+                    <li>服务支持</li>
+                    <li><a href="">售后政策</a></li>
+                    <li><a href="">自助服务</a></li>
+                    <li><a href="">相关下载</a></li>
+                </ul>
+                <ul>
+                    <li>线下门店</li>
+                    <li><a href="">小米之家</a></li>
+                    <li><a href="">服务网点</a></li>
+                    <li><a href="">授权体验</a></li>
+                </ul>
+                <ul>
+                    <li>关于小米</li>
+                    <li><a href="">了解小米</a></li>
+                    <li><a href="">加入小米</a></li>
+                    <li><a href="">投资者关系</a></li>
+                    <li><a href="">企业社会责任</a></li>
+                    <li><a href="">廉洁举报</a></li>
+                </ul>
+                <ul>
+                    <li>关注我们</li>
+                    <li><a href="">新浪微博</a></li>
+                    <li><a href="">官方微信</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">公益基金会</a></li>
+                </ul>
+                <ul>
+                    <li>特色服务</li>
+                    <li><a href="">F码通道</a></li>
+                    <li><a href="">礼物码</a></li>
+                    <li><a href="">防伪查询</a></li>
+                </ul>
+                <ul class="people_serve">
+                    <div class="serve_phone">
+                        <h5>400-110910</h5>
+                        <p>周一至周日 8:00-18:00</p>
+                        <p>（仅收市花费）</p>
+                        <span>人工客服</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer_bottom clearfix">
+                <div class="logo">
+                    <img src="assets/images/logo-mi2.png">
+                </div>
+                <div class="footer_text">
+                    <ul class="clearfix">
+                        <li>小米商城</li>
+                        <li>小米商城</li>
+                        <li>小米商城</li>
+                        <li>小米商城</li>
+                        <li>MIUI</li>
+                        <li>米家</li>
+                        <li>米聊</li>
+                        <li>多看</li>
+                        <li>游戏</li>
+                        <li>政企服务</li>
+                        <li>小米天猫店</li>
+                        <li>小米集团隐私政策</li>
+                        <li>小米公司儿童信息保护规则</li>
+                        <li>小米商城隐私政策</li>
+                        <li>小米商城用户协议</li>
+                        <li>问题反馈</li>
+                        <li>廉政举报</li>
+                        <li>Select Location</li>
+                    </ul>
+                    <p>
+                        © mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号<br>
+                        （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 营业执照 医疗器械质量公告<br>
+                        增值电信业务许可证 网络食品经营备案 京食药网食备202010048 食品经营许可证<br>
+                        违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试<br>
+                    </p>
+                    <ol class="clearfix">
+                        <li><img src="assets/images/footer_04.png" alt=""></li>
+                        <li><img src="assets/images/v-logo-2.png" alt=""></li>
+                        <li><img src="assets/images/icon3.png" alt=""></li>
+                        <li><img src="assets/images/v-logo-4.png" alt=""></li>
+                    </ol>
+                    <h2>让全球每个人都能享受科技带来的美好生活</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./assets/utils/layer.js"></script>
+    <script src="./js/Utils.js"></script>
+    <script src="./js/Func.js"></script>
+    <script src="./js/seckill.js"></script>
+
+    <script>
+        // 退出登录
+        exitLogin();
+        // 搜索框
+        inputChange();
+        sortList()
+    </script>
+</body>
+
+</html>
