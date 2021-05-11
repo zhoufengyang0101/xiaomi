@@ -224,10 +224,11 @@
     function changeTime(h, m, s) {
         var time = ""
         if(h === undefined) return "00:00:00"
+        if(h === 0) h = 24; // 修改0点负值bug
         let hours, min, sec;
         var date = new Date();
         if (date.getHours() < 24) {
-            hours = h - date.getHours();
+            hours = h - date.getHours() - 1;
             min = m | 59 - date.getMinutes();
             sec = s | 59 - date.getSeconds();
             time += hours < 10 ? "0" + hours.toString() + ":" : hours.toString() + ":";
