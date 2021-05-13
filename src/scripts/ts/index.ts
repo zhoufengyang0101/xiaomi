@@ -158,7 +158,7 @@ function autoPlayCarousel() {
 
 // 节流函数
 var timer:any = 0;
-var throttle = (func: any, wait = 500) => {
+var _throttle = (func: any, wait = 500) => {
     return function () {
         var args = arguments;
         if (!timer) {
@@ -175,7 +175,7 @@ var throttle = (func: any, wait = 500) => {
 function animation() {
     requestAnimationFrame(animation);
     update();
-    throttle(changeTime, 1000)()
+    _throttle(changeTime, 1000)()
 }
 animation()
 

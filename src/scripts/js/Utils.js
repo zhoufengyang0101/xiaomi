@@ -203,7 +203,6 @@
     }
     // 简易版节流
     function throttle(func, wait = 500) {
-        console.log(func)
         var timer;
         return function () {
             var args = arguments;
