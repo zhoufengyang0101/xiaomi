@@ -126,6 +126,15 @@ goToCar?.addEventListener("click", toCarHandler);
 function toCarHandler(e: Event) {
 
     // 登录判断：未登录跳转至登录页面登录        登录直接至购物车
+    let reg = new RegExp('(^|)' + "login" + '=([^;]*)(;|$)');
+    let login;
+    if(document.cookie.match(reg)) {
+        login = JSON.parse(document.cookie.match(reg)![2]);
+    }
+    if(!login) {
+        window.location.href = "./login.html";
+        return
+    }
 
     // 使用localstorage存储购物车商品
     // 获取localstorage
@@ -151,7 +160,7 @@ function toCarHandler(e: Event) {
     // 重新设置localstorage
     localStorage.setItem("shopList", JSON.stringify(shopList!))
     // 去购物车页面
-    window.location.href = "./shopCar.html"
+    window.location.href = "./shopCar.html";
 }
 
 
