@@ -57,6 +57,9 @@
             <div class="shop_ather">买购物车中商品的人还买了</div>
             <div class="shop_commend">为你推荐</div>
         </div>
+        <div class="other_shoplist">
+            <ul class="goods_list clearfix"></ul>
+        </div>
     </div>
     <!-- 底部 -->
     <div class="footer">
@@ -168,6 +171,14 @@
     <script src="./js/Func.js"></script>
     <script>
         exitLogin();
+        
+        var opt = {
+            url: "http://d38893333x.zicp.vip//php/login_register/findShop.php",
+        }
+        // 渲染其余商品
+        ajax(opt).then(res => {
+            renderShopList($(".other_shoplist ul"), res);
+        })
     </script>
 </body>
 

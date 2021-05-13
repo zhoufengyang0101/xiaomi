@@ -36,10 +36,13 @@
         });
         // 监听input框值改变  
         // 把回调函数放在外边  实现节流
+        // 添加节流之后首页搜索框 
         input.bind('input propertychange', throttle(inputChangeHandler, 500));
 
         function inputChangeHandler() {
             var goods_name = $.trim($(".serch input").val());
+            // console.log(goods_name)
+            // 首页搜索框无法获取input监听
             options = {
                 url: find_url,
                 data: {
@@ -66,7 +69,7 @@
                 sessionStorage.setItem("searchShop", JSON.stringify(res));
 
                 renderShopList($(".goods_list"), res)
-                // window.location.href = "./search.html"
+                window.location.href = "./search.html"
             })
         }
     }

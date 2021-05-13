@@ -120,8 +120,6 @@
                     typeof this.options.callback === "function" ? this.options.callback(res) : "返回信息";
                 }
                 // 删除事件
-                // console.log(this)
-                // console.log(this.readyStateHandler, "-");
                 this.removeEventListener("readystatechange", this.readyStateHandler);
             }
         })
@@ -178,20 +176,17 @@
     // 最终版：除了支持this和event还支持：立即执行，函数可能有返回值，支持取消功能
     // immediate 是否立即执行，执行完再进行时间间隔
     function debounce(func, wait, immediate) {
-        // console.log(func)
         var timeout, result;
         var debounced = function () {
             var context = this;
             var args = arguments;
             if (timeout) clearTimeout(timeout);
-            console.log(immediate === true)
             if (immediate) {
                 // 如果执行过，不再执行
                 var callNow = !timeout;
                 timeout = setTimeout(function () {
                     timeout = null;
                 }, wait)
-                console.log(callNow)
                 if (callNow) result = func.apply(context, args)
             } else {
                 timeout = setTimeout(function () {
@@ -208,6 +203,7 @@
     }
     // 简易版节流
     function throttle(func, wait = 500) {
+        console.log(func)
         var timer;
         return function () {
             var args = arguments;

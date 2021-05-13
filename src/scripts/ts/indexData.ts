@@ -466,7 +466,7 @@ function createLi(data: any) {
   var price = `<p class="price">${data.goods_price}元</p>`;
   li.innerHTML = `
     <a href="#">
-      <img src="${data.pc_img}" alt="${data.desc}">
+      <img src="../assets/images/placeholder-80.png" data-src="${data.pc_img}" alt="${data.desc}">
       <h3>${data.goods_name}</h3>
       <p>${data.desc}</p>
       ${data.seckill_Price ? kill_price : price}
@@ -474,12 +474,7 @@ function createLi(data: any) {
     `
   return li;
 }
-// const seckillShop = document.querySelectorAll(".purchase .goods_list a");
-// seckillShop.forEach((item) => {
-//     item.addEventListener("click", function() {
-//         toDetileHandler(item, list)
-//     })
-// })
+
 
 // 去详情页面
 function toDetileHandler(item: any, list: any) {
