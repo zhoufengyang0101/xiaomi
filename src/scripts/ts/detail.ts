@@ -99,8 +99,11 @@ function mouseHandler(e: any) {
         max!.style.display = "none";
         min!.removeEventListener("mousemove", mouseHandler);
     } else if (e.type === "mousemove") {
-        x = e.x - rect.x - maskWidth / 2;
-        y = e.y - rect.y - maskWidth / 2;
+        // e.x e.y 页面滚动 坐标改变 bug
+        // e.offsetX e.offsetY 不能用，offset获取坐标是相对最近的定位元素
+        // e.pageX e.pageY 相对整个页面  
+        x = e.pageX - rect.x - maskWidth / 2;
+        y = e.pageY - rect.y - maskWidth / 2;
         if (x < 0) x = 0;
         else if (x > rect.width - maskWidth) x = rect.width - maskWidth;
         if (y < 0) y = 0;
